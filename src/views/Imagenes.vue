@@ -5,6 +5,7 @@
   </div>
 </template>
 <script>
+import { mapGetters, mapActions } from "vuex";
 import Imagen from "@/components/imagen.vue";
 export default {
   name: "Imagenes",
@@ -15,25 +16,13 @@ export default {
     this.cargarImagen();
   },
   data() {
-    return {
-      Items: [],
-    };
+    return {};
   },
   methods: {
-    cargarImagen: async function () {
-      try {
-        const setting = {
-          method: "GET",
-        };
-        const url = "https://picsum.photos/v2/list?page=2&limit=10";
-        const data = await fetch(url, setting);
-        const json = await data.json();
-        this.Items = json;
-      } catch (err) {
-        console.log(err);
-      }
-    },
+    ...mapActions("imagenes", ["cargarImagen"]),
   },
-  watch: {},
+  computed: {
+    ...mapGetters("imagenes", ["Items"]),
+  },
 };
 </script>

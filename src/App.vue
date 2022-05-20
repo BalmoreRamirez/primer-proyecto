@@ -48,7 +48,7 @@ export default {
       { nombre: "Home", ruta: "/" },
       { nombre: "About", ruta: "/about" },
       { nombre: "Usuarios", ruta: "/usuarios" },
-       { nombre: "Imagenes", ruta: "/imagenes" },
+      { nombre: "Imagenes", ruta: "/imagenes" },
     ],
   }),
   methods: {
