@@ -49,6 +49,7 @@ export default {
       { nombre: "About", ruta: "/about" },
       { nombre: "Usuarios", ruta: "/usuarios" },
       { nombre: "Imagenes", ruta: "/imagenes" },
+      { nombre: "Clientes", ruta: "/clientes" },
     ],
   }),
   methods: {

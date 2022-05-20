@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import About from "../views/AboutView.vue";
 import Usuarios from "../views/UsuariosView.vue";
 import Imagenes from "../views/Imagenes.vue";
+import Clientes from "../views/Clientes.vue";
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const routes = [
     path: "/imagenes",
     name: "imagenes",
     component: Imagenes,
+  },
+  {
+    path: "/clientes",
+    name: "clientes",
+    component: Clientes,
   },
 ];
 
